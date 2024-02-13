@@ -1,0 +1,14 @@
+#!/bin/bash -l
+#PBS -l select=1:ncpus=4
+##PBS -l system=polaris
+#PBS -l place=scatter
+#PBS -l walltime=0:30:00
+#PBS -l filesystems=home:eagle 
+###PBS -l filesystems=home:eagle #grand
+#PBS -q debug
+#PBS -A ALCFAITP
+
+module load conda/2023-10-04
+
+echo "Hi there"
+
